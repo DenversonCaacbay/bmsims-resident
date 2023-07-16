@@ -1,0 +1,19 @@
+.header {
+    padding: 10px;
+  }
+  
+  .header h3 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #27329b;
+  }
+  .name {
+    display:block;
+  }
+
+  @media (max-width: 479px) {
+    .name {
+      display: none;
+    }
+  }
+  

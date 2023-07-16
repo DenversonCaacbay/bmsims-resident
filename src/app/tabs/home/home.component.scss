@@ -1,0 +1,188 @@
+:root {
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+  }
+.header {
+    padding: 10px;
+  }
+  
+  .header h3 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #27329b;
+  }
+  .name {
+    display:block;
+  }
+//   .scrolling-wrapper {
+//     &::-webkit-scrollbar {
+//         height: 12px;
+//         background: #27329b;
+//       }
+//       .cards::-webkit-scrollbar {
+//         height: 12px;
+//       }
+      
+//       .cards::-webkit-scrollbar-thumb,
+//       .cards::-webkit-scrollbar-track {
+//         border-radius: 92px;
+//       }
+      
+//       .cards::-webkit-scrollbar-thumb {
+//         background: #27329b;
+//       }
+      
+//       .cards::-webkit-scrollbar-track {
+//         background: #ffffff;
+//       }
+//     overflow-x: scroll;
+//     overflow-y: hidden;
+//     white-space: nowrap;
+  
+//     ion-card {
+//       display: inline-block;
+//     }
+.latest{
+    --background: #27329b;
+    --color: #ffffff;
+    ion-card-title{
+        --color: #ffffff;
+    }
+}
+    ion-card:hover{
+        --background: #27329b;
+        --color: #ffffff;
+        ion-card-title{
+            --color: #ffffff;
+        }
+    }
+//   }
+
+  .container {
+    max-width: 1400px;
+    padding: 30px 30px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 32px;
+    // margin-bottom: 1em;
+  }
+  
+  .cards {
+    display: flex;
+    padding: 0px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .card:hover {
+    color: var(--white);
+    background: var(--red);
+  }
+  
+  .card .card-title {
+    font-size: 20px;
+  }
+  
+  .card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .card .card-link-wrapper {
+    margin-top: auto;
+  }
+
+  ion-button{
+    float:right;
+  }
+  .quest{
+    font-size: 30px;
+  }
+  
+  .card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--red);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .card:hover .card-link {
+    background: #27329b;
+  }
+  
+  .cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: #27329b;
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  @media (min-width: 500px) {
+    .card {
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  @media (max-width: 479px) {
+    .name {
+      display: none;
+    }
+  }
+  

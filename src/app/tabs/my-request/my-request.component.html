@@ -1,0 +1,82 @@
+<ion-content>
+  <div class="header">
+    <ion-grid>
+      <ion-row>
+        <ion-col><h3>BMSIMS</h3></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col>
+          <ion-button>
+            <ion-icon name="person"></ion-icon>&nbsp;<span class="name">Denverson Caacbay</span>
+          </ion-button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="header">
+    <h3>All Requests</h3>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <label>Get Date: August 1, 2023</label><br>
+      <label>Request Type: Barangay Clearance</label><br>
+      <label>Status: </label><ion-chip color="warning">Ongoing</ion-chip>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <label>Get Date: August 5, 2023</label><br>
+      <label>Request Type: Barangay Clearance</label><br>
+      <label>Status: </label><ion-chip color="warning">Ongoing</ion-chip>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <label>Get Date: August 7, 2023</label><br>
+      <label>Request Type: Barangay Clearance</label><br>
+      <label>Status: </label><ion-chip color="danger">Not Approve</ion-chip>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <label>Get Date: June 1, 2023</label><br>
+      <label>Request Type: Barangay Clearance</label><br>
+      <label>Status: </label><ion-chip color="success">Done</ion-chip>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button expand="block" (click)="setOpen(true)">
+      <ion-icon name="help"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Legends</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)"><b>x</b></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col><ion-chip color="success">Done</ion-chip></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-chip color="warning">Pending</ion-chip></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-chip color="danger">Not Approve</ion-chip></ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      
+      
+    </ng-template>
+  </ion-modal>
+</ion-content>

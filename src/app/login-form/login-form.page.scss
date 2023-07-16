@@ -1,0 +1,47 @@
+ion-content {
+    --background: #27329b;
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 400px; /* Adjust the width value as per your preference */
+    margin: 0 auto;
+  }
+
+  .form{
+    width:90%;
+    padding: 5%;
+    background-color: #ffffff;
+    border-radius: 3%;
+  }
+  ion-input {
+    --color: #27329b; /* Set text color */
+    --placeholder-color: #27329b; /* Set placeholder color */
+    --highlight-color-focused: #27329b; /* Set focus highlight color */
+    --border-color: #27329b; /* Set border color */
+    --background: transparent; /* Set transparent background */
+  }
+  .logo-image {
+    max-width: 150px;
+    margin-bottom: 16px;
+  }
+  
+  .button-container {
+    margin-top: 16px;
+  }
+  
+  ion-button {
+    --background: #27329b;
+    --color: #ffffff;
+  }
+  .text-center{
+    text-align: center;
+  }
+
+.text{
+    color:#ffffff;
+}

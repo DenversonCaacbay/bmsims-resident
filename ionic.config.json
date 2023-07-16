@@ -1,0 +1,7 @@
+{
+  "name": "bmsims-resident",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
